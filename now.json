@@ -1,0 +1,15 @@
+{
+  "name": "image-optimizer",
+  "version": 2,
+  "builds": [
+    { "src": "index.js", "use": "@now/node" },
+    { "src": "/ui/index.js", "use": "@now/node" },
+    { "src": "/optimizer/index.js", "use": "@now/node" },
+    { "src": "/downloadOptimized/index.js", "use": "@now/node" },
+    { "src": "*.jpg", "use": "@now/static" },
+    { "src": "static/*", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/downloadOptimized/(.*)", "dest": "/downloadOptimized" }
+  ]
+}
