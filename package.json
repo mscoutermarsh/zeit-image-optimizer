@@ -2,7 +2,7 @@
   "name": "image-optimizer",
   "dependencies": {
     "@zeit/integration-utils": "latest",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.3.0",
     "imagemin": "^6.1.0",
     "imagemin-jpegtran": "^6.0.0",
     "imagemin-pngquant": "^8.0.0",
